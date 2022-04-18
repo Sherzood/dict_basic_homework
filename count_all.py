@@ -12,10 +12,10 @@ def count_all(txt):
     for i in txt:
         if i.isdigit():
             digits+=1
-        else:
+        if i.isalpha():
             letters+=1  
     d={}
     d['LETTERS']=letters 
     d['DIGITS']=digits         
     return d
-print(count_all('sherzod1'))    
+print(count_all('python 2022'))    
